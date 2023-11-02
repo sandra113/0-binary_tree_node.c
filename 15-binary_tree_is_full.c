@@ -14,7 +14,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	height = tree_height(tree);
 	nodes = tree_nodes(tree);
 
-	return nodes == (1 << height) - 1;
+	return (nodes == (1 << height) - 1);
 }
 
 /**
