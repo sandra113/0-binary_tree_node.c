@@ -25,7 +25,6 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
  * @tree: pointer to the root node of the tree to count the number of nodes
  * Return: Number of leaves
  */
-
 int tree_nodes(const binary_tree_t *tree)
 {
 	if (tree == NULL)
@@ -34,14 +33,14 @@ int tree_nodes(const binary_tree_t *tree)
 }
 
 /**
- * binary_tree_leaves - counts the leaves in a binary tree
+ * tree_leaves - counts the leaves in a binary tree
  * @tree: pointer to the root node of the tree to count the number of leaves
  * Return: Number of leaves
  */
-
 int tree_leaves(const binary_tree_t *tree)
 {
 	int leaves, leaves2;
+
 	if (tree == NULL)
 		return (0);
 	if (tree->left == NULL && tree->right == NULL)
